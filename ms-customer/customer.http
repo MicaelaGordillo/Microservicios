@@ -1,0 +1,14 @@
+### TEST
+GET http://localhost:7070/customers/test
+
+### List all customers
+GET http://localhost:7070/customers/list
+
+### Get token from keycloak
+GET http://localhost:7070/customers/currency/John
+
+###
+GET http://localhost:7070/customers/exchange?to=BOB&from=USD&amount=500
+
+###
+GET http://localhost:7070/customers/list/exchanges

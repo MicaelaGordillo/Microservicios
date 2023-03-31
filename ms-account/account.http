@@ -1,0 +1,8 @@
+### TEST
+GET http://localhost:6060/accounts/test
+
+### list all accounts
+GET http://localhost:6060/accounts/list
+
+### get account by id
+GET http://localhost:6060/accounts/1
