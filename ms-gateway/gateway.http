@@ -1,0 +1,14 @@
+### Customer
+GET http://localhost:7070/customers/list
+
+### Account
+GET http://localhost:8435/accounts/list
+
+### Gateway customer
+GET http://localhost:8282/ms-customer/customers/list
+
+### Gateway account
+GET http://localhost:8282/ms-account/accounts/list
+
+### Gateway currency-converter
+GET http://localhost:8282/currency-converter/api/currency/list

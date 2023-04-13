@@ -1,5 +1,6 @@
 package com.example.mscustomer.service
 
+import com.example.mscustomer.dto.CurrencyDto
 import com.example.mscustomer.dto.ResponseServiceDto
 import org.springframework.cloud.openfeign.FeignClient
 import org.springframework.web.bind.annotation.GetMapping
@@ -16,6 +17,6 @@ interface CurrencyService {
     ): ResponseServiceDto
 
     @GetMapping("/api/currency/list")
-    fun listCurrencies(): List<String>
+    fun listCurrencies(): List<CurrencyDto>
 
 }

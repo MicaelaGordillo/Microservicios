@@ -1,5 +1,6 @@
 package com.example.mscustomer.api
 
+import com.example.mscustomer.dto.CurrencyDto
 import com.example.mscustomer.dto.ResponseServiceDto
 import com.example.mscustomer.dto.TokenClientCredentialsDto
 import com.example.mscustomer.service.AccountService
@@ -43,7 +44,7 @@ class CustomerController @Autowired constructor (
         return token
     }
 
-    @GetMapping("/exchange")
+    @GetMapping("/ms/exchange")
     fun exchangeRate(@RequestParam to: String,
                      @RequestParam from: String,
                      @RequestParam amount: BigDecimal
@@ -52,8 +53,8 @@ class CustomerController @Autowired constructor (
         return result
     }
 
-    @GetMapping("/list/exchanges")
-    fun listExchanges(): List<String> {
+    @GetMapping("/ms/exchanges/list")
+    fun listExchanges(): List<CurrencyDto> {
         val result = currencyService.listCurrencies()
         return result
     }

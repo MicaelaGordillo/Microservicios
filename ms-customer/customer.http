@@ -7,8 +7,8 @@ GET http://localhost:7070/customers/list
 ### Get token from keycloak
 GET http://localhost:7070/customers/currency/John
 
-###
-GET http://localhost:7070/customers/exchange?to=BOB&from=USD&amount=500
+### Get exchange from currency-converter
+GET http://localhost:7070/customers/ms/exchange?to=BOB&from=USD&amount=10
 
-###
-GET http://localhost:7070/customers/list/exchanges
+### Get list of exchanges from currency-converter
+GET http://localhost:7070/customers/ms/exchanges/list
